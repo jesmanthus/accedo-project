@@ -123,8 +123,7 @@
 .fa-search {
   color: white;
   font-size: 20px;
-  padding-top: 10px;
-  align-self: center;
+  margin-top: 9px;
   cursor: pointer;
 }
 

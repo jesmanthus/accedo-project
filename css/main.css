@@ -5,7 +5,7 @@
 }
 
 #hero {
-  background-image: url(../images/photo-1.jpeg);
+  background-image: url(../images/hero-image.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -30,7 +30,6 @@
 
 #header img {
   position: relative;
-  width: 80px;
 }
 
 #header ul {
@@ -56,7 +55,7 @@
 }
 
 .dropdown-menu {
-  background-color: var(--colorMain);
+  background-color: var(--colorBlack);
 }
 
 .dropdown-menu a:hover {
@@ -103,31 +102,32 @@
 }
 
 #search-section label {
+  display: none;
   color: white;
+}
+
+#search-section .col-10.offset-1 .row {
+  flex-direction: column;
+  align-items: center;
 }
 
 #search-section input {
   border: none;
   outline: none;
-  padding: 10px 15px;
-  border-radius: none !important;
-  font-weight: 700;
-}
-
-#search-section input:first-of-type {
-  border-width: 0 2px 0 0;
-  border-style: solid;
-  border-color: hsl(193, 7%, 76%);
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 0;
 }
 
 .fa-search {
   color: white;
   font-size: 20px;
-  margin-top: 9px;
+  margin: 12.5px 0;
   cursor: pointer;
 }
 
 .search-sectionLink {
+  border-bottom: 1px solid;
   color: white;
 }
 
@@ -151,14 +151,14 @@
 }
 
 .solution-sectionContainer {
-  background-image: url(../images/photo-2.jpeg);
+  background-image: url(../images/section-bg-1.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .tecnical-salersContainer {
   color: white;
-  background-color: rgba(0, 0, 0, 0.92);
+  background-color: rgba(0, 0, 0, 0.9);
   padding: 25px 35px 35px;
 }
 
@@ -206,6 +206,7 @@
 
 .second-row img {
   width: 100%;
+  max-height: 632px;
   object-fit: cover;
 }
 
@@ -264,6 +265,26 @@
   #main p {
     color: white;
     text-align: right;
+  }
+
+  /* SECTION: SEARCH */
+  #search-section label {
+    display: block;
+  }
+
+  #search-section input:first-of-type {
+    border-width: 0 2px 0 0;
+    border-style: solid;
+    border-color: hsl(193, 7%, 76%);
+  }
+
+  #search-section .col-10.offset-1 .row {
+    flex-direction: row;
+    align-items: initial;
+  }
+
+  #search-section input {
+    margin-bottom: 0;
   }
 
   /* SECTION: APPLY */

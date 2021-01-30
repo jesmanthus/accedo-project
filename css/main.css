@@ -28,6 +28,10 @@
   bottom: 25px;
 }
 
+.navbar-toggler:focus {
+  outline: none;
+}
+
 #header img {
   position: relative;
 }
@@ -131,8 +135,10 @@
   color: white;
 }
 
-.search-sectionLink:hover {
-  text-decoration: underline;
+.search-sectionLink:hover,
+.search-sectionLink:focus {
+  outline: none;
+  text-decoration: none;
   color: white;
 }
 

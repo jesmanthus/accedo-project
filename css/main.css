@@ -20,7 +20,8 @@
 }
 
 #header .firts-button:hover {
-  background-color: hsl(351, 74%, 32%);
+  background-color: var(--colorBlack);
+  transition: .5s;
 }
 
 .navbar {
@@ -42,16 +43,14 @@
 }
 
 #header a {
+  font-weight: bold;
   color: white;
 }
 
-.header-menuItem {
-  margin: 0 10px;
-}
-
 .dropdown-toggle::after {
+  vertical-align: 0.2rem;
+  font-size: 1.4rem;
   color: var(--colorMain);
-  margin-left: 0;
 }
 
 .header-menuLink:hover {
@@ -131,14 +130,15 @@
 }
 
 .search-sectionLink {
-  border-bottom: 1px solid;
   color: white;
+}
+
+.search-sectionLink:hover {
+  text-decoration: underline;
 }
 
 .search-sectionLink:hover,
 .search-sectionLink:focus {
-  outline: none;
-  text-decoration: none;
   color: white;
 }
 
@@ -210,6 +210,11 @@
   outline: none;
 }
 
+.second-rowLeft button:hover {
+  background-color: var(--colorBlack);
+  transition: .5s;
+}
+
 .second-row img {
   width: 100%;
   max-height: 632px;
@@ -252,12 +257,10 @@
 
 .footer-secondRow a {
   color: white;
-  border-width: 0 0 1px 0;
-  border-style: solid;
 }
 
 .footer-secondRow a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 /* MEDIA QUERIES */
@@ -310,6 +313,7 @@
 
   .footer-firtsRow li {
     margin: 0 15px;
+    font-weight: bold;
   }
 
   .footer-firtsRow li:hover {
@@ -589,6 +593,14 @@
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 992px) {
+  .navbar-nav .nav-item a {
+    border-bottom: 2px solid transparent;
+  }
+
+  .navbar-nav .nav-item a:hover {
+    border-bottom-color: var(--colorMain);
+  }
+
   .jobs-firtsRowLeft {
     width: 60%;
   }
